@@ -61,8 +61,14 @@ This will build a Docker image named `dl-docker` and tagged either `cpu` or `gpu
 ## Running the Docker image as a Container
 Once we've built the image, we have all the frameworks we need installed in it. We can now spin up one or more containers using this image, and you should be ready to [go deeper](http://imgur.com/gallery/BvuWRxq)
 
+
+
 **CPU Version**
-```bash
+```
+
+bash
+cd /
+mkdir sharedfolder
 docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder floydhub/dl-docker:cpu bash
 ```
 	
