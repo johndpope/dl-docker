@@ -67,8 +67,7 @@ Once we've built the image, we have all the frameworks we need installed in it. 
 ```
 
 bash
-cd /
-sudo mkdir sharedfolder
+
 docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder floydhub/dl-docker:cpu bash
 ```
 	
